@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mask RCNN</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+
+    <!-- Nav Bar-->
+    <ul
+      class="nav navbar-light"
+      style="background-color: #d8ecfa; font-size: 20px"
+    >
+      <li class="nav-item">
+        <a
+          class="nav-link activate"
+          href="{{ url_for('home_page') }}"
+          style="margin: 0px 200px"
+          >Home</a
+        >
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link activate"
+          href="{{ url_for('image_predict_page') }}"
+          style="margin: 0% -100%"
+          >Image Prediction</a
+        >
+      </li>
+    </ul>
+    <!-- Nav Bar-->
+
+    <!-- Zoi Data Logo -->
+    <nav class="navbar navbar-light bg-light">
+      <a class="navbar-brand" href="http://www.zoidata.com/">
+        <img
+          src="https://media-exp1.licdn.com/dms/image/C4E0BAQFgndDuBja18Q/company-logo_200_200/0/1603602294877?e=2159024400&v=beta&t=vxbgVhXwOwG_HrTCm5_Mg72EHwureCmLtzQDlWePewE"
+          width="150"
+          height="150"
+          alt=""
+          style="margin: -100px 0px"
+        />
+      </a>
+    </nav>
+    <!-- Zoi Data Logo-->
+
+    <h1 class="text-center">Cloth Images Segmentation And Classifying</h1>
+
+    <!-- Input -->
+    <p class="p-3 text-center">
+      Segmente Etmek İstediğiniz Görselleri Yükleyiniz
+    </p>
+  </head>
+
+  <body>
+    <form method="post" enctype="multipart/form-data" class="text-center">
+      <input type="file" name="file1" />
+      <input type="submit" />
+    </form>
+  </body>
+
+  <footer class="bg-light text-center text-lg-start">
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: #d8eaf7">
+      <a class="text-dark" href="http://www.zoidata.com/">Zoi Data</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+</html>
